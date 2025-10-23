@@ -16,7 +16,6 @@ def test_postman_echo_status_codes(method, endpoint, expected_code):
     assert response.status_code == expected_code
 
 
-
 def test_get_request_with_valid_query():
     queries = {
         "id": 12,
