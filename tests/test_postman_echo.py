@@ -8,7 +8,7 @@ BASE_URL = "https://postman-echo.com/"
 @pytest.mark.parametrize(('method', 'endpoint', 'expected_code'), [
     ('get', 'get', 200),
     ('post', 'post', 200),
-    ('get', 'post', 404),
+    ('get', 'post', 405),
     ('post', 'get', 404)
 ])
 def test_postman_echo_status_codes(method, endpoint, expected_code):
